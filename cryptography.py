@@ -19,19 +19,18 @@ while True:
     if what=="e":
         m1=list(input("Message: "))
         k1=list(input("Key: "))
+        l1=[]
+        for char in m1:
+            num=associations.find(char)
+            l1=l1+[num]
+        for char2 in k1:
+            got=associations.find(char2)
+            l2=l2+[got]
+        print(l1)
+        print(l2)
     if what=="d":
         m2=input("Message: ")
         k2=input("Key: ")
     if (what!="q") and (what!="e") and (what!="d"):
         print("Did not understand command, try again.")
         continue
-l1=[]
-for char in m1:
-    num=associations.find(char)
-    print(num)
-    l1=l1+[num]
-print(l1)
-for char2 in k1:
-    got=associations.find(char2)
-    print(got)
-    l2=l2+[got]
