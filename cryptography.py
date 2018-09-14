@@ -1,7 +1,7 @@
 """
 cryptography.py
 Author: Emma Dunbar
-Credit: <list sources used, if any>
+Credit: Geoff Dunbar, Learn Python
 
 Assignment:
 
