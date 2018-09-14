@@ -17,10 +17,8 @@ while True:
         print("Goodbye!")
         break
     if what=="e":
-        #m1=list(input("Message: "))
-        #k1=list(input("Key: "))
-        m1="Two plus two = Five"
-        k1="Lorem ipsum"
+        m1=list(input("Message: "))
+        k1=list(input("Key: "))
         l1=[]
         l2=[]
         for char in m1:
@@ -37,8 +35,8 @@ while True:
                 j=l1[i]+l2[i]
                 l3=l3+[j]
         for f in l3:
-            while f>=len(l3):
-                f=f%len(l3)
+            if f>=len(associations):
+                f=f-len(associations)
             e=associations[f]
             h=h+e
         print(h)
